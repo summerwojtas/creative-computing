@@ -1,0 +1,27 @@
+body {
+
+}
+h1{
+  font-weight: 200;
+  color: #F2F2F2;
+}
+
+.done{
+  text-decoration:underline;
+}
+
+#black-text{
+  color: blue;
+}
+
+#red-text{
+    color:pink
+}
+
+#rounded-box{
+  background-color:beige;
+  padding:10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}

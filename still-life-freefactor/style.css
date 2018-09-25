@@ -1,0 +1,26 @@
+.cup{
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: relative;
+  transform:translate(50px, 80px) ;
+  z-index: 1;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position: fixed;
+  transform:translate(50px, 80px) ;
+  z-index: 1;
+}
+
+.biggerbox{
+  width: 500px;
+  height: 500px;
+  background-color: purple;
+  position: fixed;
+  transform:translate(50px, 80px);
+  z-index: 1;
+}
