@@ -7,27 +7,31 @@ body,html{
 .container{
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: antiquewhite;
+    background-color: lightyellow;
 
 }
 
 .title{
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: aqua;
+    background-color: lightcoral;
+    
 }
 
 h1{
     font-family: "Fjalla One", sans-serif;
+    color:crimson
+    
 }
 p{
     font-family: 'Archivo Narrow', sans-serif;
 }
 h2{
-   font-family: 'Archivo Narrow', sans-serif; 
+   font-family: 'Archivo Narrow', sans-serif;
+   
 }
 .box{
-    background-color: blueviolet;
+    background-color: darkseagreen;
     height: 30px;
     grid-column-start: 1;
     grid-column-end: 4;
