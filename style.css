@@ -25,3 +25,11 @@ h1{
   width: 100px;
   height: 100px;
 }
+
+@media (max-width: 480px) {
+  #rounded-box{
+    background-color: pink;
+    border-radius: 10px;
+  }
+
+}
