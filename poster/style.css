@@ -15,12 +15,14 @@ body,html{
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: lightcoral;
+    padding-left: 10px;
     
 }
 
 h1{
     font-family: "Fjalla One", sans-serif;
-    color:crimson
+    color:white;
+    
     
 }
 p{
@@ -30,9 +32,37 @@ h2{
    font-family: 'Archivo Narrow', sans-serif;
    
 }
+.background{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.featured{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.special{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .box{
     background-color: darkseagreen;
     height: 30px;
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
+@media screen and (max-width: 800px) {
+    .container{
+    grid-template-columns:auto ;
+    }
+    .box{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .title{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+}
+ 
