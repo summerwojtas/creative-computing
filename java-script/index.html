@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id ="button">"i've been clicked"</div>
+
+    <script>
+    var i = 0;
+    var words= [
+      "<div class='blue'>blue</div>",
+      "<div class='red'>red</div>",
+      "<div class='yellow'>yellow</div>",
+      "<div class='green'>hi I'm green</div>",
+    ]
+    $("document").ready(function(){
+       $("#button").click(function() {
+         if (i < words.length) {
+           console.log ("hello")
+           $("body").append(words[i]);
+           i++;
+         }
+         // $("#random").html("wow");
+       })
+     })
+
+    // myDiv.append("<h1>Hello Globe</h1>")
+    // myDiv.css({"color" : "red")};
+    // myDiv.click
+
+    </script>
+
+
+
+    <!-- <script>
+      var id;
+      id= "hello"
+      console.log(id);
+
+      id = 20;
+      console.log(id);
+
+      var name = "summer"
+      var age = 20
+      var cost = 1.25
+      var isAlive = true
+      var season = "winter"
+      var fall = "fall"
+      var spring = "spring"
+
+      var colors = ["red", "blue", "yellow"]
+      var is = 0
+      while(is < colors.length){
+        console.log(colors[is] + " is cool:" + is);
+        is = is + 1
+      }
+  //     console.log(name);
+  //     console.log(season);
+  //     console.log(fall)
+  //     console.log(spring)
+  //
+  //     // if(age = < 21){
+  //     //   console.log("younger than 21");
+  //     // } else{
+  //     //   console.log("older than 21");
+  //     // }
+  // console.log(id);
+  //   console.log(id);
+  //     console.log(id);
+  //       console.log(id);
+</script> -->
+  </body>
+</html>
