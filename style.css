@@ -22,8 +22,8 @@ h1{
   background-color:beige;
   padding:10px;
   border-radius: 5px;
-  width: 100px;
-  height: 100px;
+  width: 1000px;
+  height: 1000px;
 }
 
 @media (max-width: 480px) {
