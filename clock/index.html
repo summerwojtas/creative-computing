@@ -1,20 +1,132 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href= "style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body>
 
-  <script>
-    $("document").ready(function(){
-      var textElement = $("#text")
-      textElement.mouseenter(function(){
-      textElement.html("mouse left");
-    });
-  })
+<body>
+  <div class="clock-1">
+    <p id="No1"></p>
+  </div>
+
+  <div class="clock-2">
+    <div id = "second" class="second"></div>
+    <div id = "minute" class="minute"></div>
+    <div id = "hour" class="hour"></div>
+    <div class="circle"></div>
+  </div>
+
+  <div class="clock-3">
+    <div id = "tick" class="tick"></div>
+  </div>
+
+  <div class="clock-4">
+    <div id = "tickS" class="tickS"></div>
+    <div id = "tickM" class="tickM"></div>
+    <div id = "tickH" class="tickH"></div>
+  </div>
+
+<div class="wrap">
+  <div class="clock-5">
+    <div id = "seconds5" class ="seconds5"></div>
+    <div id = "minutes5" class="minutes5"></div>
+    <div id = "hours5" class="hours5"></div>
+
+<div class="digits">
+    <h1 id = "digit1">12 </h1>
+    <h1 id = "digit2">3 </h1>
+    <h1 id = "digit3">6 </h1>
+    <h1 id = "digit4">9 </h1>
+    </div>
+  </div>
+</div>
+
+<script>
+;
+
+    //for clock1 using javascripts
+    const clock = () => {
+        var d = new Date();
+        document.getElementById("No1").innerHTML = d.toLocaleTimeString();
+    }
+    let tick = setInterval(clock, 1000);
+
+    //fot clock2 using javascripts
+    clock2();
+    function clock2(){
+      let d = new Date();
+      let s = d.getSeconds();
+      console.log("the second is "+s);
+      let m = d.getMinutes();
+      //console.log("the mintue is "+m);
+
+      let h = d.getHours();
+
+      let second = 360 *(s/60);
+      let minute = 360 *(m/60);
+      let hour = 360 *(h/12);
+      console.log("the minute is "+minute);
+      console.log("the hour is "+hour);
+
+      document.getElementById("second")
+              .style
+              .transform = 'rotate(' + second + 'deg)';
+      document.getElementById("minute")
+              .style
+              .transform = 'rotate(' + minute + 'deg)';
+      document.getElementById("hour")
+              .style
+              .transform = 'rotate(' + hour + 'deg)';
+    }
+    let tick2 = setInterval(clock2, 1000);
+
+    //clock 3 using jquery
+
+    setInterval( function() {
+        var color = 0;
+        var seconds = new Date().getSeconds();
+        var sdegree = seconds * 6;
+        var srotate = "rotate(" + sdegree + "deg)";
+        $("#tick").css({ "transform": srotate });
+    }, 1000);
+
+    //clock 4 using jquery
+    setInterval( function() {
+        var color = 0;
+        var seconds = new Date().getSeconds();
+        var minutes = new Date().getMinutes();
+        var hours = new Date().getHours();
+        var sdegree = seconds * 6;
+        var mdegree = minutes * 6;
+        var hdegree = hours * 12;
+        var srotate = "rotate(" + sdegree + "deg)";
+        var mrotate = "rotate(" + mdegree + "deg)";
+        var hrotate = "rotate(" + hdegree + "deg)";
+        $("#tickS").css({ "transform": srotate });
+        $("#tickM").css({"transform": mrotate});
+        $("tickH").css({"transform": mrotate});
+    }, 1000);
+
+    //clock 5 using jquery
+    setInterval( function() {
+        var color = 0;
+        var seconds = new Date().getSeconds();
+        var minutes = new Date().getMinutes();
+        var hours = new Date().getHours();
+        var sdegree = seconds * 6;
+        var mdegree = minutes * 6;
+        var hdegree = hours * 12;
+        var srotate = "rotate(" + sdegree + "deg)";
+        var mrotate = "rotate(" + mdegree + "deg)";
+        var hrotate = "rotate(" + hdegree + "deg)";
+        $("#seconds5").css({ "transform": srotate });
+        $("#minutes5").css({"transform": mrotate});
+        $("hours5").css({"transform": mrotate});
+    }, 1000);
+
   </script>
+
 </body>
 </html>
