@@ -19,10 +19,10 @@ h1{
 }
 
 #rounded-box{
-  background-color:beige;
+  background-color:light-pink;
   padding:10px;
   border-radius: 5px;
-  width: 1000px;
+  width: 600px;
   height: 1000px;
 }
 
