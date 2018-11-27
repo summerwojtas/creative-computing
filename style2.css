@@ -1,3 +1,8 @@
-img {
+img{
   margin: : auto;
+}
+
+p{
+  font-family: 'Cardo', serif;
+  font-size:24px;
 }

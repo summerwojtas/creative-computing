@@ -16,37 +16,41 @@ body,html{
     grid-column-end: 4;
     background-color: lightcoral;
     padding-left: 10px;
-    
+
 }
 
 h1{
-    font-family: "Fjalla One", sans-serif;
+    font-family: 'Lobster', cursive;
     color:white;
-    
-    
+
+
+
 }
 p{
     font-family: 'Archivo Narrow', sans-serif;
 }
 h2{
    font-family: 'Archivo Narrow', sans-serif;
-   
+
 }
 .background{
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 28px;
 }
 .featured{
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 20px;
 }
 .special{
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 20px;
 }
 .box{
     background-color: darkseagreen;
-    height: 30px;
+    height: 40px;
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -63,6 +67,5 @@ h2{
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    
+
 }
- 

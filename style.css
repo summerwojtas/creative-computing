@@ -1,29 +1,46 @@
 body {
 
 }
-h1{
+/* h1{
   font-weight: 200;
-  color: #F2F2F2;
+  color: grey;
+} */
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
 }
 
 .done{
   text-decoration:underline;
+  font-size: 24px;
+  font-family: 'Inconsolata', monospace;
 }
+
 
 #black-text{
   color: blue;
+  size: 72px;
+  font-family: 'Inconsolata', monospace;
 }
 
 #red-text{
     color:pink
+    size: 72px;
+    font-family: 'Inconsolata', monospace;
 }
 
 #rounded-box{
-  background-color:light-pink;
+  background-color:lightpink;
   padding:10px;
   border-radius: 5px;
-  width: 600px;
-  height: 1000px;
+  width: 300px;
+  height: 400px;
 }
 
 @media (max-width: 480px) {
