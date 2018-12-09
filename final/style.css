@@ -1,3 +1,397 @@
-#background{
-  background-color: yellow;
+
+
+h1{
+  font-family: 'Shrikhand', cursive;
+  /* border: 1px solid magenta; */
+  font-size: 36px;
+  transform: translate(456px,20px);
+
+}
+/* body{
+  background-color: lightgreen;
+} */
+
+
+/* #background {
+color: lightgreen;
+  width: 20px;
+  height: 30px;
+  transform: translate(100px, -100px);
+  } */
+
+#border{
+  border-style: dotted;
+  border-width: 5px;
+  width: 700px;
+  height: 500px;
+  position:fixed;
+  /* transform: translateX(100px);
+  transform: translateY(-150px); */
+  transform: translate(285px, -170px);
+  z-index: -1;
+
+}
+
+
+/* #h1{
+  font-family: 'Shrikhand', cursive;
+} */
+
+#petals > div{
+  background-color: white;
+}
+
+#color1{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+#color2{
+  width: 50px;
+  height: 50px;
+  background-color: lightyellow;
+}
+#color3{
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+}
+#color4{
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+}
+
+#flower1{
+  width: 200px;
+  height: 400px;
+  transform: translate(750px, -80px);
+  position: fixed;
+  /* background-color: lightblue; */
+}
+
+#flower1 #flower #petals{
+  width: 200px;
+  height: 200px;
+}
+
+#flower1 #flower #middle{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: white;
+  position: fixed;
+  transform: translate(80px, -130px);
+  border: 1px solid black;
+}
+#flower1 #flower #bottom{
+  width: 5px;
+  height: 200px;
+  background-color: white;
+  position: fixed;
+  transform: translate(100px, -80px);
+  border: 1px solid black;
+    z-index: -1;
+}
+#flower1 #flower #petals #p1{
+  width: 20px;
+  position: fixed;
+  height: 100px;
+  transform: rotate(0deg) translateX(90px);
+  border-radius: 100px;
+  border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower1 #flower #petals #p2{
+  width: 20px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(45deg) translate(97px,-90px);
+  border-radius: 100px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower1 #flower #petals #p3{
+  width: 20px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(90deg) translate(49px, -138px);
+  border-radius: 100px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower1 #flower #petals #p4{
+  width: 20px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(135deg) translate(-30px, -50px);
+  border-radius: 100px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower1 #flower #petals #p5{
+  width: 20px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(90deg) translate(50px, -40px);
+  border-radius: 100px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower1 #flower #petals #p6{
+  width: 20px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(0deg) translate(95px, 90px);
+  border-radius: 100px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower1 #flower #petals #p7{
+  width: 20px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(45deg) translate(100px, 20px);
+  border-radius: 100px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower1 #flower #petals #p8{
+  width: 20px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(135deg) translate(-33px, -160px);
+  border-radius: 100px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower2{
+  width: 200px;
+  height: 400px;
+  position: fixed;
+  /* background-color: lightblue; */
+  transform: rotate(0deg) translate(319px,-90px);
+}
+
+#flower2 #flower #petals{
+  width: 50px;
+  height: 100px;
+}
+#flower2 #flower #middle1{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: white;
+  position: fixed;
+  transform: translate(90px, -30px);
+  border: 1px solid black;
+}
+
+#flower2 #flower #bottom1{
+  width: 5px;
+  height: 200px;
+  background-color: white;
+  position: fixed;
+  transform: translate(110px, 23px);
+  border: 1px solid black;
+  z-index: -99;
+
+}
+#flower2 #flower #petals #pa{
+  width: 40px;
+  position: fixed;
+  height: 100px;
+  transform: rotate(0deg) translateX(90px);
+  border-radius: 1000px;
+  border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower2 #flower #petals #pb{
+  width: 40px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(45deg) translate(97px,-90px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower2 #flower #petals #pc{
+  width: 40px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(90deg) translate(49px, -138px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower2 #flower #petals #pd{
+  width: 40px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(135deg) translate(-30px, -50px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower2 #flower #petals #pe{
+  width: 40px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(90deg) translate(50px, -40px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower2 #flower #petals #pf{
+  width: 40px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(0deg) translate(95px, 90px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower2 #flower #petals #pg{
+  width: 40px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(45deg) translate(100px, 20px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower2 #flower #petals #ph{
+  width: 40px;
+  height: 100px;
+  position: fixed;
+  transform: rotate(135deg) translate(-33px, -160px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+#flower3{
+  width: 200px;
+  height: 400px;
+    position: fixed;
+  /* background-color: lightblue; */
+  transform: rotate(0deg) translate(522px,-100px);
+}
+#flower3 #flower #middle3{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: white;
+  position: fixed;
+  transform: translate(78px, -56px);
+  border: 1px solid black;
+}
+
+#flower3 #flower #petals{
+  width: 100px;
+  height: 100px;
+}
+
+
+#flower3 #flower #petals #pm{
+  width: 50px;
+  position: fixed;
+  height: 80px;
+  transform: rotate(0deg) translateX(90px);
+  border-radius: 1000px;
+  border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower3 #flower #petals #pn{
+  width: 50px;
+  height: 80px;
+  position: fixed;
+  transform: rotate(45deg) translate(97px,-90px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower3 #flower #petals #po{
+  width: 50px;
+  height: 80px;
+  position: fixed;
+  transform: rotate(90deg) translate(49px, -138px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower3 #flower #petals #pp{
+  width: 50px;
+  height: 80px;
+  position: fixed;
+  transform: rotate(135deg) translate(-30px, -50px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower3 #flower #petals #pq{
+  width: 50px;
+  height: 80px;
+  position: fixed;
+  transform: rotate(90deg) translate(50px, -40px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower3 #flower #petals #pr{
+  width: 50px;
+  height: 80px;
+  position: fixed;
+  transform: rotate(0deg) translate(95px, 90px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower3 #flower #petals #ps{
+  width: 50px;
+  height: 80px;
+  position: fixed;
+  transform: rotate(45deg) translate(100px, 20px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+
+#flower3 #flower #petals #pt{
+  width: 50px;
+  height: 80px;
+  position: fixed;
+  transform: rotate(135deg) translate(-33px, -160px);
+  border-radius: 1000px;
+    border: 1px solid black;
+  /* background-color: yellow; */
+}
+#flower3 #flower #bottom2{
+  width: 20px;
+  height: 200px;
+  background-color: white;
+  position: fixed;
+  transform: translate(111px, 55px);
+  border: 1px solid black;
+    z-index: -99;
 }

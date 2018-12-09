@@ -2,26 +2,219 @@
 <html lang="en" dir="ltr">
   <head>
     <meta c=harset="utf-8">
-    <title> Color! </title>
-  </head>
+    <title> welcome to my garden </title>
+    <link rel="stylesheet" href="/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+</style>
+</head>
   <body>
+    <h1> Color in the Garden!</h1>
+    <div class="color-picker">
+      <div id="color1"></div>
+      <div id="color2"></div>
+      <div id="color3"></div>
+      <div id="color4"></div>
+    </div>
     <div id="container">
 
-      <div id="background"
-      class="background"
+      <div id="flower1">
+        <div id="flower">
+          <div id="petals">
+            <div id="p1"></div>
+            <div id="p2"></div>
+            <div id="p3"></div>
+            <div id="p4"></div>
+            <div id="p5"></div>
+            <div id="p6"></div>
+            <div id="p7"></div>
+            <div id="p8"></div>
+          </div>
+          <div id="middle">
+          </div>
+          <div id="bottom">
+          </div>
+      </div>
+    </div>
 
-      <div id="flower"
-      class="flower">
-      <img src="flower.gif" alt="flower">
+      <div id="flower2">
+        <div id="flower">
+          <div id="petals">
+            <div id="pa"></div>
+            <div id="pb"></div>
+            <div id="pc"></div>
+            <div id="pd"></div>
+            <div id="pe"></div>
+            <div id="pf"></div>
+            <div id="pg"></div>
+            <div id="ph"></div>
+          </div>
+          <!-- <div id="middle">
+        </div> -->
+        <div id="bottom1">
+        </div>
+        <div id="middle1"> </div>
+      </div>
+    </div>
 
-      <div id="petals"
-      class="flower"
-      onclick="changeColour('petals')"></div>
+      <div id="flower3">
+        <div id="flower">
+          <div id="petals">
+            <div id="pm"></div>
+            <div id="pn"></div>
+            <div id="po"></div>
+            <div id="pp"></div>
+            <div id="pq"></div>
+            <div id="pr"></div>
+            <div id="ps"></div>
+            <div id="pt"></div>
+          </div>
+          <!-- <div id="middle">
+        </div> -->
+<div id="middle3"> </div>
+        <div id="bottom2">
+        </div>
+      </div>
+    </div>
 
-      
+<!-- <div id= "background"> </div> -->
+<div id="border"> </div>
 
 
+      <script type="text/javascript">
 
+
+        var color = "red"
+        // select the color to draw with
+        $('#color1').click(function(){
+          color = "red"
+        })
+        $('#color2').click(function(){
+          color = "lightyellow" // #FFF rbga(244,255,133)
+        })
+        $('#color3').click(function(){
+          color = "pink"
+        })
+        $('#color4').click(function(){
+          color = "purple"
+        })
+
+        // draw into the shapes
+        $('#p1').click(function(){
+          $('#p1').css("background-color", color)
+        })
+
+        $('#p2').click(function(){
+          $('#p2').css("background-color", color)
+        })
+
+        $('#p3').click(function(){
+          $('#p3').css("background-color", color)
+        })
+
+        $('#p4').click(function(){
+          $('#p4').css("background-color", color)
+        })
+
+        $('#p5').click(function(){
+          $('#p5').css("background-color", color)
+        })
+
+        $('#p6').click(function(){
+          $('#p6').css("background-color", color)
+        })
+
+        $('#p7').click(function(){
+          $('#p7').css("background-color", color)
+        })
+
+        $('#p8').click(function(){
+          $('#p8').css("background-color", color)
+        })
+        $('#bottom').click(function(){
+          $('#bottom').css("background-color", color)
+        })
+        $('#middle').click(function(){
+          $('#middle').css("background-color", color)
+        })
+$('#pa').click(function(){
+  $('#pa').css("background-color", color)
+})
+
+$('#pb').click(function(){
+  $('#pb').css("background-color", color)
+})
+
+$('#pc').click(function(){
+  $('#pc').css("background-color", color)
+})
+
+$('#pd').click(function(){
+  $('#pd').css("background-color", color)
+})
+
+$('#pe').click(function(){
+  $('#pe').css("background-color", color)
+})
+
+$('#pf').click(function(){
+  $('#pf').css("background-color", color)
+})
+
+$('#pg').click(function(){
+  $('#pg').css("background-color", color)
+})
+
+$('#ph').click(function(){
+  $('#ph').css("background-color", color)
+})
+
+$('#bottom1').click(function(){
+  $('#bottom1').css("background-color", color)
+})
+$('#middle1').click(function(){
+  $('#middle1').css("background-color", color)
+})
+$('#pm').click(function(){
+  $('#pm').css("background-color", color)
+})
+
+$('#pn').click(function(){
+  $('#pn').css("background-color", color)
+})
+
+$('#po').click(function(){
+  $('#po').css("background-color", color)
+})
+
+$('#pp').click(function(){
+  $('#pp').css("background-color", color)
+})
+
+$('#pq').click(function(){
+  $('#pq').css("background-color", color)
+})
+
+$('#pr').click(function(){
+  $('#pr').css("background-color", color)
+})
+
+$('#ps').click(function(){
+  $('#ps').css("background-color", color)
+})
+
+$('#pt').click(function(){
+  $('#pt').css("background-color", color)
+})
+$('#middle3').click(function(){
+  $('#middle3').css("background-color", color)
+})
+$('#bottom2').click(function(){
+  $('#bottom2').css("background-color", color)
+})
+
+      </script>
 
   </body>
 </html>
